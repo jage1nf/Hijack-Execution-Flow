@@ -12,11 +12,11 @@ sudo sh -c 'echo /tmp/inject_lib.so > /etc/ld.so.preload'
 ``` 
 Cleanup Commands:
 ```
-sudo sed -i 's##/tmp/inject_lib.so##' /etc/ld.so.preload  
+sudo sed -i 's/tmp/inject_lib.so' /etc/ld.so.preload  
 ```
 
 # Shared Library Injection via LD_PRELOAD  
 Attack Commands:
 ```
-LD_PRELOAD=#/tmp/inject_lib.so ls  
+LD_PRELOAD=/tmp/inject_lib.so ls  
 ```
